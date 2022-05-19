@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Comp\\source\\repos\\Bankav1\\Bankav1\\Bankav1.csproj": {}
+    "C:\\Development\\Banking\\Bankav1\\Bankav1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Comp\\source\\repos\\Bankav1\\Bankav1\\Bankav1.csproj": {
+    "C:\\Development\\Banking\\Bankav1\\Bankav1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Comp\\source\\repos\\Bankav1\\Bankav1\\Bankav1.csproj",
+        "projectUniqueName": "C:\\Development\\Banking\\Bankav1\\Bankav1.csproj",
         "projectName": "Bankav1",
-        "projectPath": "C:\\Users\\Comp\\source\\repos\\Bankav1\\Bankav1\\Bankav1.csproj",
-        "packagesPath": "C:\\Users\\Comp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Comp\\source\\repos\\Bankav1\\Bankav1\\obj\\",
+        "projectPath": "C:\\Development\\Banking\\Bankav1\\Bankav1.csproj",
+        "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
+        "outputPath": "C:\\Development\\Banking\\Bankav1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Comp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -48,9 +48,19 @@
               "target": "Package",
               "version": "[6.0.5, )"
             },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.3.1, )"
             }
           },
           "imports": [
@@ -71,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
