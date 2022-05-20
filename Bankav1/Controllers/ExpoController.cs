@@ -20,14 +20,14 @@ namespace BankSystem.Controllers
         public async Task<ActionResult<List<Expo>>> Get()
         {
 
-            return Ok(await _context.Clients.ToListAsync());
+            return Ok(await _context.Expos.ToListAsync());
         }
 
         [HttpGet("{id}")]
 
         public async Task<ActionResult<Expo>> Get(int id)
         {
-            var ekspozitura = await _context.Clients.FindAsync(id);
+            var ekspozitura = await _context.Expos.FindAsync(id);
             if (ekspozitura == null)
                 return BadRequest("Ekspozitura not found.");
             return Ok(ekspozitura);
@@ -35,22 +35,21 @@ namespace BankSystem.Controllers
 
         [HttpPost]
 
-        public async Task<ActionResult<List<Expo>>> AddClient(Expo ekspozitura)
+        public async Task<ActionResult<List<Expo>>> AddExpo(Expo ekspozitura)
         {
             _context.Expos.Add(ekspozitura);
             await _context.SaveChangesAsync();
 
-            return Ok(await _context.Clients.ToListAsync());
+            return Ok(await _context.Expos.ToListAsync());
         }
         [HttpPut]
 
-        public async Task<ActionResult<List<Expo>>> UpdateClient(Expo request)
+        public async Task<ActionResult<List<Expo>>> UpdateExpo(Expo request)
         {
             var ekspozitura = await _context.Expos.FindAsync(request.Id);
             if (ekspozitura == null)
                 return BadRequest("Ekspozitura not found.");
 
-            ekspozitura.Id = request.Id;
             ekspozitura.RegistrationNumber = request.RegistrationNumber;
             ekspozitura.City = request.City;
             ekspozitura.Address = request.Address;
@@ -59,7 +58,7 @@ namespace BankSystem.Controllers
 
         await _context.SaveChangesAsync();
 
-            return Ok(await _context.Clients.ToListAsync());
+            return Ok(await _context.Expos.ToListAsync());
         }
 
         [HttpDelete("{id}")]
@@ -72,7 +71,7 @@ namespace BankSystem.Controllers
             _context.Expos.Remove(ekspozitura);
             await _context.SaveChangesAsync();
 
-            return Ok(await _context.Clients.ToListAsync());
+            return Ok(await _context.Expos.ToListAsync());
         }
 
     }

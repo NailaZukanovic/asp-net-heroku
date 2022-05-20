@@ -35,9 +35,9 @@ namespace BankSystem.Controllers
 
         [HttpPost]
 
-        public async Task<ActionResult<List<Worker>>> AddClient(Client ekspozitura)
+        public async Task<ActionResult<List<Worker>>> AddWorker(Worker ekspozitura)
         {
-            _context.Clients.Add(ekspozitura);
+            _context.Workers.Add(ekspozitura);
             await _context.SaveChangesAsync();
 
             return Ok(await _context.Workers.ToListAsync());
@@ -50,7 +50,6 @@ namespace BankSystem.Controllers
             if (ekspozitura == null)
                 return BadRequest("Ekspozitura not found.");
 
-            ekspozitura.Id = request.Id;
             ekspozitura.JMBG = request.JMBG;
             ekspozitura.FirstName = request.FirstName;
             ekspozitura.LastName = request.LastName;

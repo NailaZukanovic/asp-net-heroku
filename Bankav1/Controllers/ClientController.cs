@@ -50,7 +50,6 @@ namespace BankSystem.Controllers
             if (ekspozitura == null)
                 return BadRequest("Ekspozitura not found.");
 
-            ekspozitura.Id = request.Id;
             ekspozitura.BankAccountId = request.BankAccountId;
             ekspozitura.JMBG = request.JMBG;
             ekspozitura.FirstName = request.FirstName;

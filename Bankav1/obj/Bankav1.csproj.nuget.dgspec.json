@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Development\\Banking\\Bankav1\\Bankav1.csproj": {}
+    "C:\\Users\\Comp\\Downloads\\Banking\\Banking\\Bankav1\\Bankav1.csproj": {}
   },
   "projects": {
-    "C:\\Development\\Banking\\Bankav1\\Bankav1.csproj": {
+    "C:\\Users\\Comp\\Downloads\\Banking\\Banking\\Bankav1\\Bankav1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Development\\Banking\\Bankav1\\Bankav1.csproj",
+        "projectUniqueName": "C:\\Users\\Comp\\Downloads\\Banking\\Banking\\Bankav1\\Bankav1.csproj",
         "projectName": "Bankav1",
-        "projectPath": "C:\\Development\\Banking\\Bankav1\\Bankav1.csproj",
-        "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
-        "outputPath": "C:\\Development\\Banking\\Bankav1\\obj\\",
+        "projectPath": "C:\\Users\\Comp\\Downloads\\Banking\\Banking\\Bankav1\\Bankav1.csproj",
+        "packagesPath": "C:\\Users\\Comp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Comp\\Downloads\\Banking\\Banking\\Bankav1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Comp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -81,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
